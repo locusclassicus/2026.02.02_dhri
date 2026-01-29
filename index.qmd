@@ -5,7 +5,7 @@ author:
   - name: Софья Порфирьева
     orcid: 0000-0003-1367-906X
     email: sporfiry@uottawa.ca
-    affiliations: Ottawa University
+    affiliations: University of Ottawa
   - name: Ольга Алиева
     orcid: 0000-0003-1683-1928
     email: oalieva@hse.ru
@@ -17,6 +17,14 @@ format:
   clean-revealjs:
     incremental: true 
     scrollable: true
+    include-in-header:
+      text: |
+        <style>
+          .brace-col { display:flex; flex-direction:column; align-items:center; justify-content:center; }
+          .brace { font-size: 120px; line-height: 0.7; }
+          .brace-authors { font-size: 18px; opacity: 0.85; text-align:center; margin-top: 6px; }
+          .slide-note { font-size: 0.8em; opacity: 0.85; }
+        </style>
 echo: false
 message: false
 df-print: paged
@@ -58,3 +66,28 @@ df-print: paged
 - Финальный результат: полноценная рецензия, сохранение в формате `.txt`
 
 # Часть II. Оценка 
+
+## Шаг 1. ИИ не моральный агент
+
+::: columns
+::: column{width="75%"}
+Мы **не рассматриваем LLM как морального субъекта наравне с человеком**:
+
+- у ИИ нет автономной нормативной мотивации
+- он не участвует в социальных практиках морального становления
+- он не является адресатом ответственности (answerability) в человеческом смысле
+:::
+
+::: column{width="25%"}
+<div class="brace-col">
+  <div class="brace">}</div>
+  <div class="brace-authors">
+    Blackshaw (2023)<br/>
+    Gregg (2023)
+  </div>
+</div>
+:::
+:::
+
+## Шаг 2. Но ИИ всё же производит некоторое знание
+
