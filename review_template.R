@@ -97,8 +97,5 @@ final_prompt <- paste("На основании подробных анализо
 final_response <- chat_reviewer$chat(final_prompt)
 
 # Извлекаем и сохраняем рецензию
-monograph_review <- final_response
-cat(monograph_review, file = "рецензия_на_монографию.txt")
+save(final_response, file = "рецензия.txt")
 
-# Выводим часть рецензии в консоль
-cat(substr(monograph_review, 1, 1000), "...\n")
